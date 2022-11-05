@@ -55,7 +55,7 @@ blockquote {
 
 blockquote .quote-text {
     color: rgba(0,0,0,.75);
-    font-size: 200%;
+    font-size: 175%;
 }
 
 blockquote .quote-author {
@@ -108,12 +108,30 @@ main {
 
 /* footer */
 footer {
+    background-color: rgba(0,0,0,.1);
     border-top: 1px solid rgba(0,0,0,.1);
-    font-size: smaller;
-    margin: 25px;
+    padding: 25px 0;
     text-align: center;
 }
 
 footer p {
+    font-style: italic;
     margin: 10px;
+}
+
+input[type=text] {
+    border: 1px solid rgba(0,0,0,.25);
+    border-radius: 15px 0 0 15px;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+input[type=submit] {
+    background-color: brown;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    font-size: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
 }
