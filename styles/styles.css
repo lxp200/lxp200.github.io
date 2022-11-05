@@ -41,7 +41,7 @@ h1 {
 
 h2,
 h3 {
-    margin: 10px 0;
+    margin: 20px 0 10px 0;
 }
 
 /* header */
@@ -111,6 +111,11 @@ blockquote .quote-author {
     color: rgba(0,0,0,.5);
     margin-top: 10px;
     text-align: right;
+}
+
+/* tour dates */
+#tour-dates p {
+    margin: 5px 0;
 }
 
 /* footer */
