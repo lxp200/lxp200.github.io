@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* Team #5: Mackenzie, Yuanbo, Lucas */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+a,
+a:link,
+a:visited {
+    color: brown;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: maroon;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2,
+h3 {
+    margin: 10px;
+}
+
+/* header */
+header #featured-image {
+    width: 100%;
+}
+
+/* navigation menu */
+nav {
+    margin: 15px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+nav ul li a {
+    margin: 0 25px;
+}
+
+.active-page {
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* main content */
+main {
+    margin: 25px;
+}
+
+.placeholder {
+    background-color: rgba(255,0,0,.1);
+    border: 1px solid red;
+    color: red;
+    font-size: small;
+    line-height: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    font-size: smaller;
+    margin: 25px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px;
+}
