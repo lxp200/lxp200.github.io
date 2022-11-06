@@ -112,15 +112,16 @@ main #portrait-image { /* the portrait on the home page */
 
 /* everything related to forms */
 main fieldset { 
-    border: 1px solid maroon;
-    border-radius: 5px;
-    margin: 15px;
+    border: 1px dashed rgba(128, 0, 0, .75);
+    border-radius: 15px;
+    margin: 25px;
     padding: 25px;
 }
 
 main fieldset legend {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
+    font-weight: bold;
     padding: 0 10px;
 }
 
@@ -130,16 +131,18 @@ main form td {
     padding: 5px 0;
 }
 
-main input[type=text] {
+main input[type=text],
+main input[type=email],
+main input[type=tel] {
     border: 1px solid rgba(0,0,0,.25);
     border-radius: 5px;
     font-size: 15px;
-    padding: 10px 15px;
+    padding: 5px;
 }
 
 main input[type=submit],
 main input[type=reset] {
-    border-radius: 15px;
+    border-radius: 10px;
     color: white;
     cursor: pointer;
     font-size: 15px;
