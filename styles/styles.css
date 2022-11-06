@@ -39,9 +39,12 @@ h1 {
     text-transform: uppercase;
 }
 
-h2,
+h2 {
+    margin: 20px 0;
+}
+
 h3 {
-    margin: 20px 0 10px 0;
+    margin: 10px 0;
 }
 
 /* header */
@@ -71,10 +74,9 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-/* main content */
-main {
-    margin: 50px auto;
-    width: 80%;
+.active-page::after,
+.active-page::before {
+    content: " · ";
 }
 
 /* temporary placeholder for missing content */
@@ -88,13 +90,25 @@ main {
     text-align: center;
 }
 
+/* main content */
+main {
+    margin: 50px auto;
+    width: 80%;
+}
+
 main > p {
     margin: 25px 0;
 }
 
+#portrait-image {
+    display: block;
+    margin: 50px auto;
+    width: 250px;
+}
+
 /* home featured quote */
 blockquote {
-    background-color: rgba(0,0,0,.05);
+    background: linear-gradient(90deg, rgba(0,0,0,.05), transparent);
     border-left: 10px solid rgba(0,0,0,.1);
     font-style: italic;
     margin: 50px auto;
