@@ -35,8 +35,310 @@
 
         <main>
 
-            <!-- placeholder should be removed later -->
-            <div class="placeholder">placeholder</div>
+            <div class="store"></div>
+            <form id="store" method="post" action="store.html">
+                <!-- Tickets -->
+                <fieldset id="tickets">
+                    <legend>Tickets | "Live in Europe 2022 Tour" On Sale Now!</legend>
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <label for="concert">Concert:</label>
+                                <select id="concert">
+                                    <optgroup label="November">
+                                        <option value="berlin">11/07 Berlin, DE</option>
+                                        <option value="london">11/11 London, UK</option>
+                                        <option value="amsterdam">11/13 Amsterdam, NL</option>
+                                        <option value="brussels">11/15 Brussels, BE</option>
+                                        <option value="vienna">11/18 Vienna, AT</option>
+                                        <option value="lyon">11/21 Lyon, FR</option>
+                                        <option value="paris">11/24 Paris, FR</option>
+                                        <option value="gelsenkirchen">11/26 Gelsenkirchen, DE</option>
+                                        <option value="stockholm">11/29 Stockholm, SE</option>
+                                    </optgroup>
+                                    <optgroup label="December">
+                                        <option value="madrid">12/01 Madrid, ES</option>
+                                        <option value="munich">12/04 Munich, DE</option>
+                                        <option value="liverpool">12/07 Liverpool, UK</option>
+                                        <option value="milan">12/10 Milan, IT</option>
+                                        <option value="rome">12/13 Rome, IT</option>
+                                        <option value="marseille">12/16 Marseille, FR</option>
+                                        <option value="lisbon">12/19 Lisbon, PT</option>
+                                        <option value="cardiff">12/23 Cardiff, DE</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="ticket_type">Ticket Type:</label>
+                            </td>
+                            <td>
+                                <select id="ticket_type" multiple="multiple" size="3">
+                                    <option value="general_admission">General Admission (GA)</option>
+                                    <option value="floor">Floor</option>
+                                    <option value="vip">VIP Package</option>
+                                    <option value="all_access">ALL ACCESS Gold Package</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="number_of_tickets">Number of Tickets (limit 4/order)</label>
+                            </td>
+                            <td>
+                                <select id="number_of_tickets">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <!-- Merchandise -->
+                <fieldset id="merchandise">
+                    <legend>Merchandise</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Music:</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="record1" value="eroica_symphony">
+                                <label for="record1">Symphony No.3 in E flat, op.55 "Eroica Symphony"</label>
+                                <br>
+                                <input type="checkbox" id="record2" value="choral_symphony">
+                                <label for="record2">Symphony No. 9 in D minor, op. 125 "Choral Symphony"</label>
+                                <br>
+                                <input type="checkbox" id="record3" value="emperor_concerto">
+                                <label for="record3">Piano Concerto No.5 in E flat major, op. 73 "Emperor Concerto"</label>
+                                <br>
+                                <input type="checkbox" id="record4" value="late_piano_sonatas">
+                                <label for="record4">Piano Sonata Nos. 28 - 32 "The Late Piano Sonatas"</label>
+                                <br>
+                                <input type="checkbox" id="record5" value="late_string_quartets">
+                                <label for="record5">String Quartet Nos. 12 - 16 "The Late String Quartets"</label>
+                                <br>
+                                <input type="checkbox" id="record6" value="fidelio">
+                                <label for="record6">Fidelio, op. 72 "The Only Beethoven Opera"</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="records">Format:</label>
+                            </td>
+                            <td>
+                                <select id="records" multiple="multiple" size="3">
+                                    <option value="vinyl">Vinyl (LP)</option>
+                                    <option value="cd">CD</option>
+                                    <option value="cassette">Cassette</option>
+                                    <option value="package1">Vinyl + CD</option>
+                                    <option value="package2">Vinyl + Cassette</option>
+                                    <option value="package3">Vinyl + CD + Cassette</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="quantity">Quantity:</label>
+                            </td>
+                            <td>
+                                <select id="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Merch:</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="item1" value="tshirt">
+                                <label for="item1">Beethoven T-Shirt</label>
+                                <br>
+                                <input type="checkbox" id="item2" value="sweater">
+                                <label for="item2">Beethoven Sweater</label>
+                                <br>
+                                <input type="checkbox" id="item3" value="tote_bag">
+                                <label for="item3">Beethoven Tote Bag</label>
+                                <br>
+                                <input type="checkbox" id="item4" value="poster">
+                                <label for="item4">Beethoven "Glow in the Dark" Poster</label>
+                                <br>
+                                <input type="checkbox" id="item5" value="pin">
+                                <label for="item5">Beethoven "Limited Edition" Pin</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="size">Size (T-Shirt/Sweater):</label>
+                                <select id="size">
+                                    <optgroup label="Adult">
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                        <option value="xtra_large">Xtra-Large</option>
+                                    </optgroup>
+                                    <optgroup label="Youth">
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                        <option value="xtra_large">Xtra-Large</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="quantity">Quantity:</label>
+                            </td>
+                            <td>
+                                <select id="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                    </table>
+                </fieldset>
+                
+                <!-- Cardholder Information -->
+                <fieldset id="cardholder_information">
+                    <legend>Cardholder Information</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="first_name">First Name:*</label>
+                            </td>
+                            <td>
+                                <input type="text" id="first_name" size="20" maxlength="15" required="required">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="last_name">Last Name:*</label>
+                            </td>
+                            <td>
+                                <input type="text" id="last_name" size="20" maxlength="15" required="required">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="address">Address*:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="address" size="30" maxlength="30" required="required">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="city">City*:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="city" size="20" maxlength="20" required="required">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Country / Postal Code</label>
+                            </td>
+                            <td>
+                                <label for="country">Country Code*:</label>
+                                <input type="text" id="country" size="2" maxlength="2" required="required">
+                                <label for="postal_code">Postal Code*:</label>
+                                <input type="text" id="postal_code" size="10" maxlength="10" required="required">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email Address*:</label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" size="20" maxlength="30"
+                                    title="For example, john.smith@smith.com" required="required">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone">Phone Number:</label>
+                            </td>
+                            <td>
+                                <input type="tel" id="phone">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Payment Method*:</label>
+                                <!-- how do I make it required?-->
+                            </td>
+                            <td>
+                                <input type="radio" name="payment_method" id="visa" value="visa">
+                                <label for="visa">Visa</label>
+                                <br>
+                                <input type="radio" name="payment_method" id="master_card" value="master_card" checked>
+                                <label for="master_card">Master Card</label>
+                                <br>
+                                <input type="radio" name="payment_method" id="american_express" value="american_express" >
+                                <label for="american_express">American Express</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="card_number">Card Number*:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="card_number" size="20" maxlength="19" required="required">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Expiry Date:</label>
+                            </td>
+                            <td>
+                                <label for="month">Month*:</label>
+                                <input type="text" id="month" size="2" maxlength="2" required="required">
+                                <label for="year">Year*:</label>
+                                <input type="text" id="year" size="2" maxlength="2" required="required">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="csc_code">Card Security Code (CSC)*:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="csc_code" size="20" maxlength="4" required="required">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" id="submit_reservation" value="Submit Your Form">
+                                <input type="reset" id="clear_form" value="Clear Your Form">
+    
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
 
         </main>
 
