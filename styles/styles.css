@@ -132,7 +132,8 @@ blockquote .quote-author {
 
 /* youtube player */
 #embed-player {
-    margin: 25px 0 50px 0;
+    margin: 50px 0 100px 0;
+    text-align: center;
 }
 
 /* tour dates */
