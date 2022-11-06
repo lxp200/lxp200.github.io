@@ -113,7 +113,7 @@ main #portrait-image { /* the portrait on the home page */
 /* everything related to forms */
 main fieldset { 
     border: 1px solid maroon;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 15px;
     padding: 25px;
 }
@@ -141,9 +141,9 @@ main input[type=submit],
 main input[type=reset] {
     border-radius: 15px;
     color: white;
-    font-size: 15px;
-    padding: 10px 25px;
     cursor: pointer;
+    font-size: 15px;
+    padding: 5px 15px;
 }
 
 main input[type=submit] {
@@ -233,7 +233,7 @@ footer input[type=submit] {
     border: none;
     border-radius: 0 15px 15px 0;
     color: white;
+    cursor: pointer;
     font-size: 15px;
     padding: 10px 25px;
-    cursor: pointer;
 }
