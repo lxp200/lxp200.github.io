@@ -104,10 +104,57 @@ main > p {
     margin: 25px 0;
 }
 
-#portrait-image {
+main #portrait-image { /* the portrait on the home page */
     display: block;
     margin: 50px auto;
     width: 250px;
+}
+
+/* everything related to forms */
+main fieldset { 
+    border: 1px solid maroon;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 25px;
+}
+
+main fieldset legend {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 0 10px;
+}
+
+main form input,
+main form td {
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+main input[type=text] {
+    border: 1px solid rgba(0,0,0,.25);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+main input[type=submit],
+main input[type=reset] {
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+main input[type=submit] {
+    background-color: brown;
+    border: 2px solid brown;
+}
+
+main input[type=reset] {
+    background-color: white;
+    border: 2px solid brown;
+    color: brown;
 }
 
 /* home featured quote */
