@@ -47,6 +47,10 @@ h3 {
     margin: 10px 0;
 }
 
+li {
+    list-style-type: none;
+}
+
 /* header */
 header #featured-image {
     filter: contrast(.5) sepia(.5);
@@ -61,7 +65,6 @@ nav {
 
 nav ul li {
     display: inline;
-    list-style-type: none;
 }
 
 nav ul li a {
@@ -125,6 +128,11 @@ blockquote .quote-author {
     color: rgba(0,0,0,.5);
     margin-top: 10px;
     text-align: right;
+}
+
+/* youtube player */
+#embed-player {
+    margin: 25px 0 50px 0;
 }
 
 /* tour dates */
