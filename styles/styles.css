@@ -143,10 +143,16 @@ blockquote .quote-author {
     margin: 10px 0;
 }
 
-.buy-link {
+.embed-player iframe {
+    border: 1px solid brown;
+    padding: 10px;
+}
+
+.order-link {
     font-style: italic;
     font-weight: bold;
     margin-bottom: 50px;
+    text-decoration: dashed;
 }
 
 /* tour dates */
