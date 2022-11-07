@@ -230,7 +230,6 @@ blockquote .quote-author {
     font-style: italic;
     font-weight: bold;
     margin-bottom: 50px;
-    text-decoration: dashed;
 }
 
 /* tour dates */
@@ -238,7 +237,7 @@ blockquote .quote-author {
     margin: 25px 0;
 }
 
-#tour-dates li {
+#tour-dates ul li {
     margin: 10px 0;
 }
 
