@@ -54,7 +54,7 @@ li {
 
 /* header */
 header .featured-image-container {
-    background: linear-gradient(0deg, rgba(35,0,0,.75) 0%, transparent 75%);
+    background: linear-gradient(0deg, rgba(35,0,0,.9) 5%, transparent 75%);
     width: 100%;
 }
 
@@ -124,7 +124,7 @@ main #portrait-image { /* the portrait on the home page */
 
 /* everything related to forms */
 main fieldset { 
-    border: 1px dashed rgba(128, 0, 0, .75);
+    border: 1px solid rgba(128, 0, 0, .5);
     border-radius: 15px;
     margin: 25px;
     padding: 25px;
@@ -176,7 +176,7 @@ main input[type=reset] {
 }
 
 main .form-action-buttons {
-    margin-right: 15px;
+    margin-right: 20px;
     text-align: end;
 }
 
@@ -184,6 +184,7 @@ main .form-action-buttons {
 blockquote {
     background-image: linear-gradient(90deg, rgba(0,0,0,.1), rgba(0,0,0,.05));
     border-left: 10px solid rgba(0,0,0,.1);
+    border-radius: 0 15px 15px 0;
     font-style: italic;
     margin: 50px auto;
     padding: 10px 25px;
@@ -191,6 +192,7 @@ blockquote {
 
 blockquote .quote-text {
     color: rgba(0,0,0,.75);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 10px;
     font-size: 150%;
 }
