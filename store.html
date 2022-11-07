@@ -106,31 +106,19 @@
                 </fieldset>
 
                 <!-- Merchandise -->
-                <fieldset id="merchandise">
-                    <legend>Merchandise</legend>
+                <fieldset id="reissues">
+                    <legend>Limited Edition Reissues On Sale Now!</legend>
                     <table>
+                        <img src="img/beethovenvinylsymphony7.jpg" alt="Symphony No. 7 Vinyl">
                         <tr>
                             <td>
-                                <label>Music:</label>
+                                <label>"Symphony No. 7":</label>
                             </td>
                             <td>
-                                <input type="checkbox" id="record1" value="eroica_symphony">
-                                <label for="record1">Symphony No.3 in E flat, op.55 "Eroica Symphony"</label>
-                                <br>
-                                <input type="checkbox" id="record2" value="choral_symphony">
-                                <label for="record2">Symphony No. 9 in D minor, op. 125 "Choral Symphony"</label>
-                                <br>
-                                <input type="checkbox" id="record3" value="emperor_concerto">
-                                <label for="record3">Piano Concerto No.5 in E flat major, op. 73 "Emperor Concerto"</label>
-                                <br>
-                                <input type="checkbox" id="record4" value="late_piano_sonatas">
-                                <label for="record4">Piano Sonata Nos. 28 - 32 "The Late Piano Sonatas"</label>
-                                <br>
-                                <input type="checkbox" id="record5" value="late_string_quartets">
-                                <label for="record5">String Quartet Nos. 12 - 16 "The Late String Quartets"</label>
-                                <br>
-                                <input type="checkbox" id="record6" value="fidelio">
-                                <label for="record6">Fidelio, op. 72 "The Only Beethoven Opera"</label>
+                                <input type="checkbox" id="store_product" value="symphony_7">
+                                <label for="store_product">Symphony No. 7 in A major, Op. 92</label>
+                                <p>Dedicated to Count Moritz von Fries and considered by Beethoven as one of his best works, this reissue contains all four movements on limited edition 180g vinyl! Featuring Herbert Von Karajan and the Vienna Philharmonic Orchestra</p>
+                                <p>Vinyl (Doulbe LP) $35, CD $15, Cassette $10</p>
                             </td>
                         </tr>
                         <tr>
@@ -167,32 +155,71 @@
                                 </select>
                             </td>
                         </tr>
+                        <img src="img/beethovenvinylmoonlight.jpg" alt="Moonlight Sonata Vinyl">
                         <tr>
                             <td>
-                                <label>Merch:</label>
+                                <label>"Moonlight Sonata":</label>
                             </td>
                             <td>
-                                <input type="checkbox" id="item1" value="tshirt">
-                                <label for="item1">Beethoven T-Shirt</label>
-                                <br>
-                                <input type="checkbox" id="item2" value="sweater">
-                                <label for="item2">Beethoven Sweater</label>
-                                <br>
-                                <input type="checkbox" id="item3" value="tote_bag">
-                                <label for="item3">Beethoven Tote Bag</label>
-                                <br>
-                                <input type="checkbox" id="item4" value="poster">
-                                <label for="item4">Beethoven "Glow in the Dark" Poster</label>
-                                <br>
-                                <input type="checkbox" id="item5" value="pin">
-                                <label for="item5">Beethoven "Limited Edition" Pin</label>
+                                <input type="checkbox" id="store_product" value="moonlight_sonata">
+                                <label for="store_product">Piano Sonata No. 14 in C# minor, Op. 27 no. 2</label>
+                                <p> The famous sonata in 3-movements dedicated to Countess Giulietta Guicciardi, now available on limited edition 180g vinyl! Piano performed by Ludwig Hoffman</p>
+                                <p>Vinyl $25, CD $15, Cassette $10</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="size">Size<br>(T-Shirt/Sweater):</label>
+                                <label for="records">Format:</label>
                             </td>
                             <td>
+                                <select id="records" multiple="multiple" size="3">
+                                    <option value="vinyl">Vinyl (LP)</option>
+                                    <option value="cd">CD</option>
+                                    <option value="cassette">Cassette</option>
+                                    <option value="package1">Vinyl + CD</option>
+                                    <option value="package2">Vinyl + Cassette</option>
+                                    <option value="package3">Vinyl + CD + Cassette</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="quantity">Quantity:</label>
+                            </td>
+                            <td>
+                                <select id="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <!-- Merchandise -->
+                <fieldset id="merchandise">
+                    <legend>T-Shirt</legend>
+                    <table>
+                        <img src="img/beethoventshirt.jpg" alt="Black Beethoven T-Shirt">
+                        <tr>
+                            <td>
+                                <label>T-Shirt:</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="item1" value="tshirt">
+                                <label for="item1">Beethoven T-Shirt $19.99</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="size">Size:</label>
                                 <select id="size">
                                     <optgroup label="Adult">
                                         <option value="small">Small</option>
@@ -228,7 +255,60 @@
                                 </select>
                             </td>
                         </tr>
+                    </table>
+                </fieldset>
+                <!-- Merchandise -->
+                <fieldset id="merchandise">
+                    <legend>Crew Neck Sweater</legend>
+                    <table>
+                        <img src="img/beethovensweater.jpg" alt="Black Beethoven Sweater">
                         <tr>
+                            <td>
+                                <label>Sweater:</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="item1" value="tshirt">
+                                <label for="item1">Beethoven Crew Neck Sweater (Black) $29.99</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="size">Size:</label>
+                                <select id="size">
+                                    <optgroup label="Adult">
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                        <option value="xtra_large">Xtra-Large</option>
+                                    </optgroup>
+                                    <optgroup label="Youth">
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                        <option value="xtra_large">Xtra-Large</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="quantity">Quantity:</label>
+                            </td>
+                            <td>
+                                <select id="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </td>
+                        </tr>
                     </table>
                 </fieldset>
                 
