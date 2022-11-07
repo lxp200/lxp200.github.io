@@ -20,7 +20,7 @@
     <div id="master-container">
 
         <header>
-            <img id="featured-image" src="img/beethoven-contact.png" alt="Beethoven header featured picture" title="Beethoven header featured picture">
+            <img id="featured-image" src="img/beethoven-contact.jpg" alt="Beethoven header featured picture" title="Beethoven header featured picture">
             <h1>Beethoven | <b>Contact</b></h1>
         </header>
 
@@ -36,37 +36,59 @@
 
         <main>
 
-            <div class="feedback">
-                
-                <form action="#">
-              
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                <br>
-              
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                <br>
-              
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="default">Please select from below</option>
-                    <option value="usa">USA</option>
-                    <option value="canada">Canada</option>
-                    <option value="france">France</option>
-                    <option value="germany">Germany</option>
-                    <option value="uk">UK</option>
-                    <option value="australia">Australia</option>
-                </select>
-                <br>
-              
-                <label class="messagebox" for="subject">Subject</label>
-                <textarea id="subject" name="subject"  style="height:400px" placeholder="Write something.." ></textarea>
-                <br>
-              
-                <input type="submit" value="Submit">
-            
-            </div>
+            <form>
+                <fieldset id="contact-form">
+                <legend>Write us</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" placeholder="John" maxlength="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email Address:*</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" placeholder="john.smith@smithery.com" maxlength="30" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="subject">Subject:*</label>
+                        </td>
+                        <td>
+                            <select id="subject" name="subject" required>
+
+                                    <option hidden disabled selected value>Select an option</option>
+                                    <option value="booking">Booking</option>
+                                    <option value="order">Merchandise Order</option>
+                                    <option value="press">Press</option>
+                                    <option value="publishing">Publishing</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="message">Message:*</label>
+                        </td>
+                        <td>
+                            <textarea id="message" name="message" rows="8" cols="20" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                    </table>
+                    
+                </fieldset>
+
+                <input type="submit" id="submit_form" value="Submit">
+                <input type="reset" id="clear_form" value="Clear All">
+
+            </form>
 
         </main>
 
