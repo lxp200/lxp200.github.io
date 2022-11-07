@@ -53,13 +53,22 @@ li {
 }
 
 /* header */
-header #featured-image {
-    filter: contrast(.75) sepia(.25);
+header .featured-image-container {
+    background: linear-gradient(0deg, rgba(35,0,0,.75) 0%, transparent 75%);
     width: 100%;
+}
+
+header .featured-image-container #featured-image {
+    filter: contrast(.35) grayscale(1);
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: -1;
 }
 
 /* navigation menu */
 nav {
+    background-color: rgba(0,0,0,.03);
     border-bottom: 1px solid rgba(165, 42, 42, .25);
     border-top: 1px solid rgba(165, 42, 42, .25);
     padding: 15px 0;
@@ -127,10 +136,12 @@ main fieldset legend {
     padding: 0 10px;
 }
 
-main form input,
+main form input {
+    margin: 10px 5px;
+}
+
 main form td {
-    margin: 5px 10px;
-    padding: 5px 0;
+    padding: 0 10px 10px 0;
 }
 
 main input[type=text],
@@ -170,7 +181,7 @@ main .form-action-buttons {
 
 /* home featured quote */
 blockquote {
-    background-image: linear-gradient(90deg, rgba(0,0,0,.05), transparent);
+    background-image: linear-gradient(90deg, rgba(0,0,0,.1), rgba(0,0,0,.05));
     border-left: 10px solid rgba(0,0,0,.1);
     font-style: italic;
     margin: 50px auto;
@@ -234,7 +245,7 @@ footer {
 footer p {
     color: rgba(0,0,0,.25);
     font-style: italic;
-    margin: 10px;
+    margin: 15px;
 }
 
 footer input[type=text] {

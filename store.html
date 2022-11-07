@@ -20,8 +20,13 @@
     <div id="master-container">
 
         <header>
-            <img id="featured-image" src="img/beethoven-store.jpg" alt="Beethoven header featured picture" title="Beethoven header featured picture">
+
+            <div class="featured-image-container">
+                <img id="featured-image" src="img/beethoven-store.jpg" alt="Beethoven header featured picture" title="Beethoven header featured picture">
+            </div>
+
             <h1>Beethoven | <b>Store</b></h1>
+        
         </header>
 
         <nav>
@@ -43,8 +48,10 @@
                     <legend>Tickets | "Live in Europe 2022 Tour" On Sale Now!</legend>
                     <table>
                         <tr>
-                            <td colspan="2">
+                            <td>
                                 <label for="concert">Concert:</label>
+                            </td>
+                            <td>
                                 <select id="concert">
                                     <optgroup label="November">
                                         <option value="berlin">11/07 Berlin, DE</option>
@@ -84,7 +91,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="number_of_tickets">Number of Tickets (limit 4/order)</label>
+                                <label for="number_of_tickets">Number of Tickets<br>(max 4/order)</label>
                             </td>
                             <td>
                                 <select id="number_of_tickets">
@@ -182,8 +189,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2">
-                                <label for="size">Size (T-Shirt/Sweater):</label>
+                            <td>
+                                <label for="size">Size<br>(T-Shirt/Sweater):</label>
+                            </td>
+                            <td>
                                 <select id="size">
                                     <optgroup label="Adult">
                                         <option value="small">Small</option>
