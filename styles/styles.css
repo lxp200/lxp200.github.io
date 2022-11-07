@@ -54,13 +54,15 @@ li {
 
 /* header */
 header #featured-image {
-    filter: contrast(.5) sepia(.5);
+    filter: contrast(.75) sepia(.25);
     width: 100%;
 }
 
 /* navigation menu */
 nav {
-    margin: 15px 0;
+    border-bottom: 1px solid rgba(165, 42, 42, .25);
+    border-top: 1px solid rgba(165, 42, 42, .25);
+    padding: 15px 0;
     text-align: center;
 }
 
@@ -73,7 +75,6 @@ nav ul li a {
 }
 
 .active-page {
-    font-style: italic;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -96,8 +97,9 @@ nav ul li a {
 
 /* main content */
 main {
+    max-width: 960px;
     margin: 50px auto;
-    width: 80%;
+    width: 90%;
 }
 
 main > p {
