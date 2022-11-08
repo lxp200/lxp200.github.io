@@ -241,6 +241,22 @@ blockquote .quote-author {
     margin: 10px 0;
 }
 
+/* business inquiries in contact page */
+#business-inquiries {
+    border: 1px dashed rgba(128, 0, 0, .5);
+    border-radius: 15px;
+    margin: 25px;
+    padding: 25px;
+}
+
+#business-inquiries h3 {
+
+}
+
+#business-inquiries p {
+
+}
+
 /* footer */
 footer {
     background-color: rgba(0,0,0,.1);
