@@ -269,6 +269,10 @@ blockquote .quote-author {
     text-align: center;
 }
 
+#business-inquiries h2 {
+    margin-bottom: 50px;
+}
+
 #business-inquiries p {
     text-align: center;
 }
