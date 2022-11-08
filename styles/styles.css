@@ -48,11 +48,11 @@ h3 {
     margin: 15px 0;
 }
 
-ul > ul {
+ul > ul { /* for sitemap */
     margin-left: 15px;
 }
 
-ul > ul > li::before {
+ul > ul > li::before { /* for sitemap */
     content: " → ";
 }
 
@@ -92,7 +92,7 @@ nav ul li a {
     margin: 0 3vw;
 }
 
-.active-page {
+.active-page { /* nav link for the current page styled differently */
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -217,7 +217,6 @@ blockquote .quote-author {
 }
 
 /* media page */
-
 .media-img {
     border: 2px solid brown;
     float: left;
@@ -226,7 +225,7 @@ blockquote .quote-author {
     width: 175px;
 }
 
-/* youtube player */
+/* youtube player in product presentation page */
 .embed-player {
     border-left: 5px solid brown;
     margin: 25px 0 25px 10px;
