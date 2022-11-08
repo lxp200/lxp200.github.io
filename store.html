@@ -41,15 +41,14 @@
 
         <main>
 
-            <div class="store"></div>
             <form id="store" method="post" action="form-action.html">
                 <!-- Tickets -->
                 <fieldset id="tickets">
-                    <legend>Tickets | "Live in Europe 2022 Tour" On Sale Now!</legend>
+                    <legend>Tickets &mdash; "Live in Europe 2022 Tour" On Sale Now!</legend>
                     <table>
                         <tr>
                             <td>
-                                <label for="concert">Concert:</label>
+                                <label for="concert">Concert</label>
                             </td>
                             <td>
                                 <select id="concert">
@@ -78,10 +77,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="ticket_type">Ticket Type:</label>
+                                <label for="ticket_type">Ticket Type</label>
                             </td>
                             <td>
-                                <select id="ticket_type" multiple="multiple" size="3">
+                                <select id="ticket_type" multiple>
                                     <option value="general_admission">General Admission (GA)</option>
                                     <option value="floor">Floor</option>
                                     <option value="vip">VIP Package</option>
@@ -112,21 +111,21 @@
                         <img src="img/beethovenvinylsymphony7.jpg" alt="Symphony No. 7 Vinyl">
                         <tr>
                             <td>
-                                <label>"Symphony No. 7":</label>
+                                <label>Symphony No. 7</label>
                             </td>
                             <td>
-                                <input type="checkbox" id="store_product" value="symphony_7">
-                                <label for="store_product">Symphony No. 7 in A major, Op. 92</label>
+                                <input type="checkbox" id="store_product1" value="symphony_7">
+                                <label for="store_product1">Symphony No. 7 in A major, Op. 92</label>
                                 <p><i>Dedicated to Count Moritz von Fries and considered by Beethoven as one of his best works, this reissue contains all four movements on limited edition 180g vinyl! Featuring Herbert Von Karajan and the Vienna Philharmonic Orchestra</i></p>
                                 <p><b>Vinyl (Double LP) $35, CD $15, Cassette $10</b></p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="records">Format:</label>
+                                <label for="store_product1_format">Format</label>
                             </td>
                             <td>
-                                <select id="records" multiple="multiple" size="3">
+                                <select id="store_product1_format" multiple>
                                     <option value="double-vinyl">Double Vinyl (2XLP)</option>
                                     <option value="cd">CD</option>
                                     <option value="cassette">Cassette</option>
@@ -138,10 +137,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="quantity">Quantity:</label>
+                                <label for="store_product1_quantity">Quantity</label>
                             </td>
                             <td>
-                                <select id="quantity">
+                                <select id="store_product1_quantity">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -158,21 +157,21 @@
                         <img src="img/beethovenvinylmoonlight.jpg" alt="Moonlight Sonata Vinyl">
                         <tr>
                             <td>
-                                <label>"Moonlight Sonata":</label>
+                                <label>Moonlight Sonata</label>
                             </td>
                             <td>
-                                <input type="checkbox" id="store_product" value="moonlight_sonata">
-                                <label for="store_product">Piano Sonata No. 14 in C# minor, Op. 27 no. 2</label>
+                                <input type="checkbox" id="store_product2" value="moonlight_sonata">
+                                <label for="store_product2">Piano Sonata No. 14 in C# minor, Op. 27 no. 2</label>
                                 <p><i>The famous sonata in 3-movements dedicated to Countess Giulietta Guicciardi, now available on limited edition 180g vinyl! Piano performed by Ludwig Hoffman</i></p>
                                 <p><b>Vinyl $25, CD $15, Cassette $10</b></p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="records">Format:</label>
+                                <label for="store_product2_format">Format</label>
                             </td>
                             <td>
-                                <select id="records" multiple="multiple" size="3">
+                                <select id="store_product2_format" multiple>
                                     <option value="vinyl">Vinyl (LP)</option>
                                     <option value="cd">CD</option>
                                     <option value="cassette">Cassette</option>
@@ -184,10 +183,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="quantity">Quantity:</label>
+                                <label for="store_product2_quantity">Quantity</label>
                             </td>
                             <td>
-                                <select id="quantity">
+                                <select id="store_product2_quantity">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -204,13 +203,13 @@
                     </table>
                 </fieldset>
                 <!-- Merchandise -->
-                <fieldset id="merchandise">
+                <fieldset id="merchandise1">
                     <legend>T-Shirt</legend>
                     <table>
                         <img src="img/beethoventshirt.jpg" alt="Black Beethoven T-Shirt">
                         <tr>
                             <td>
-                                <label>T-Shirt:</label>
+                                <label>T-Shirt</label>
                             </td>
                             <td>
                                 <input type="checkbox" id="item1" value="tshirt">
@@ -218,9 +217,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2">
-                                <label for="size">Size:</label>
-                                <select id="size">
+                            <td>
+                                <label for="size1">Size</label>
+                            </td>
+                            <td>
+                                <select id="size1">
                                     <optgroup label="Adult">
                                         <option value="small">Small</option>
                                         <option value="medium">Medium</option>
@@ -238,10 +239,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="quantity">Quantity:</label>
+                                <label for="quantity1">Quantity</label>
                             </td>
                             <td>
-                                <select id="quantity">
+                                <select id="quantity1">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -258,23 +259,25 @@
                     </table>
                 </fieldset>
                 <!-- Merchandise -->
-                <fieldset id="merchandise">
+                <fieldset id="merchandise2">
                     <legend>Crew Neck Sweater</legend>
                     <table>
                         <img src="img/beethovensweater.jpg" alt="Black Beethoven Sweater">
                         <tr>
                             <td>
-                                <label>Sweater:</label>
+                                <label>Sweater</label>
                             </td>
                             <td>
-                                <input type="checkbox" id="item1" value="tshirt">
-                                <label for="item1">Beethoven Crew Neck Sweater <b>$29.99</b></label>
+                                <input type="checkbox" id="item2" value="tshirt">
+                                <label for="item2">Beethoven Crew Neck Sweater <b>$29.99</b></label>
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2">
-                                <label for="size">Size:</label>
-                                <select id="size">
+                            <td>
+                                <label for="size2">Size</label>
+                            </td>
+                            <td>
+                                <select id="size2">
                                     <optgroup label="Adult">
                                         <option value="small">Small</option>
                                         <option value="medium">Medium</option>
@@ -292,10 +295,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="quantity">Quantity:</label>
+                                <label for="quantity2">Quantity</label>
                             </td>
                             <td>
-                                <select id="quantity">
+                                <select id="quantity2">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -318,7 +321,7 @@
                     <table>
                         <tr>
                             <td>
-                                <label for="first_name">First Name:*</label>
+                                <label for="first_name">First Name*</label>
                             </td>
                             <td>
                                 <input type="text" id="first_name" size="20" maxlength="15" required="required">
@@ -326,7 +329,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="last_name">Last Name:*</label>
+                                <label for="last_name">Last Name*</label>
                             </td>
                             <td>
                                 <input type="text" id="last_name" size="20" maxlength="15" required="required">
@@ -334,7 +337,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="address">Address*:</label>
+                                <label for="address">Address*</label>
                             </td>
                             <td>
                                 <input type="text" id="address" size="30" maxlength="30" required="required">
@@ -342,7 +345,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="city">City*:</label>
+                                <label for="city">City*</label>
                             </td>
                             <td>
                                 <input type="text" id="city" size="20" maxlength="20" required="required">
@@ -353,15 +356,15 @@
                                 <label>Country / Postal Code</label>
                             </td>
                             <td>
-                                <label for="country">Country Code*:</label>
+                                <label for="country">Country Code*</label>
                                 <input type="text" id="country" size="2" maxlength="2" required="required">
-                                <label for="postal_code">Postal Code*:</label>
+                                <label for="postal_code">Postal Code*</label>
                                 <input type="text" id="postal_code" size="10" maxlength="10" required="required">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="email">Email Address*:</label>
+                                <label for="email">Email Address*</label>
                             </td>
                             <td>
                                 <input type="email" id="email" size="20" maxlength="30"
@@ -370,7 +373,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="phone">Phone Number:</label>
+                                <label for="phone">Phone Number</label>
                             </td>
                             <td>
                                 <input type="tel" id="phone">
@@ -378,8 +381,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label>Payment Method*:</label>
-                                <!-- how do I make it required?-->
+                                <label>Payment Method*</label>
                             </td>
                             <td>
                                 <input type="radio" name="payment_method" id="visa" value="visa">
@@ -394,7 +396,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="card_number">Card Number*:</label>
+                                <label for="card_number">Card Number*</label>
                             </td>
                             <td>
                                 <input type="text" id="card_number" size="20" maxlength="19" required="required">
@@ -402,18 +404,18 @@
                         </tr>
                         <tr>
                             <td>
-                                <label>Expiry Date:</label>
+                                <label>Expiry Date</label>
                             </td>
                             <td>
-                                <label for="month">Month*:</label>
+                                <label for="month">Month*</label>
                                 <input type="text" id="month" size="2" maxlength="2" required="required">
-                                <label for="year">Year*:</label>
+                                <label for="year">Year*</label>
                                 <input type="text" id="year" size="2" maxlength="2" required="required">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="csc_code">Card Security Code (CSC)*:</label>
+                                <label for="csc_code">Card Security Code (CSC)*</label>
                             </td>
                             <td>
                                 <input type="text" id="csc_code" size="20" maxlength="4" required="required">
