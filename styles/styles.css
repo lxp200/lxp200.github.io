@@ -48,6 +48,14 @@ h3 {
     margin: 15px 0;
 }
 
+ul > ul {
+    margin-left: 15px;
+}
+
+ul > ul > li::before {
+    content: " → ";
+}
+
 li {
     list-style-type: none;
 }
@@ -210,6 +218,14 @@ blockquote .quote-author {
 
 /* media page */
 
+.media-img {
+    border: 2px solid brown;
+    float: left;
+    margin: 25px;
+    padding: 5px;
+    width: 175px;
+}
+
 /* youtube player */
 .embed-player {
     border-left: 5px solid brown;
@@ -226,7 +242,7 @@ blockquote .quote-author {
     padding: 10px;
 }
 
-.order-link {
+.action-link {
     font-style: italic;
     font-weight: bold;
     margin-bottom: 50px;
@@ -249,12 +265,13 @@ blockquote .quote-author {
     padding: 25px;
 }
 
+#business-inquiries h2, 
 #business-inquiries h3 {
-
+    text-align: center;
 }
 
 #business-inquiries p {
-
+    text-align: center;
 }
 
 /* footer */
